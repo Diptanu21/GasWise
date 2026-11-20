@@ -1,21 +1,32 @@
 # GasWise — AI Assistance Record
 
 ## AI Tool Used
+
 ChatGPT (OpenAI)
 
 ## Conversation Link
+
 https://chatgpt.com/share/6b006122-00f0-83ec-a409-d0f00140131d
 
+## Transcript
+
+The ChatGPT conversation transcript is saved in the `ai-chats` folder.
+
+[View ChatGPT Conversation Transcript](chatgpt-gaswise-transcript.pdf)
+
 ## Purpose
-This conversation was used to discuss and review:
+
+ChatGPT was used to assist with:
 
 - LPG refill estimation methods
 - Cooking-usage calculations
-- Node.js implementation
+- JavaScript and Node.js implementation
 - CSV validation
 - Testing strategies
-- Documentation and limitations
+- Documentation and project limitations
 
-## Transcript
-The complete conversation transcript should be
-included below or saved in a separate file.
+## Transparency
+
+AI assistance was used for project planning, code development, debugging, and documentation.
+
+The attached transcript records the AI conversation. Fieldwork evidence and personal reflections must come from actual experience rather than AI-generated content.
