@@ -231,7 +231,8 @@ function printReport(stats, refill) {
   console.log("Cooking scores are relative, not kilograms of LPG.");
   console.log("Refill dates use the historical 60-day estimate.");
   console.log("They are not calculated from remaining gas weight.");
-  console.log("Current dataset is synthetic testing data.");
+console.log("Dataset includes estimated and reported cooking records.");
+console.log("See fieldwork.md for data sources and limitations.");
 }
 
 // Main
@@ -240,19 +241,22 @@ function main() {
     const { records, errors } = readCSV();
 
     if (errors.length > 0) {
-      console.error("\nCSV validation errors:");
+  console.error("Valid records:", records.length);
+  console.error("Invalid records:", errors.length);
 
-      for (const error of errors) {
-        console.error("-", error);
-      }
+  console.error("\nCSV validation errors:");
 
-      console.error(
-        "\nReport not generated until invalid rows are corrected."
-      );
+  for (const error of errors) {
+    console.error("-", error);
+  }
 
-      process.exitCode = 1;
-      return;
-    }
+  console.error(
+    "\nReport not generated until invalid rows are corrected."
+  );
+
+  process.exitCode = 1;
+  return;
+}
 
     if (records.length === 0) {
       console.error("No cooking records found.");

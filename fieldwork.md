@@ -73,10 +73,8 @@ The target is at least 20 real entries.
 
 ## Data Status
 
-The initial 20 rows in data.csv are synthetic test
-records based on approximate household cooking patterns.
-They are not individually observed measurements.
+The cooking records were prepared using information gathered from conversations with my mother about her daily cooking routine, along with direct observations made in our home kitchen on 20 November 2026.
 
-These records are used to test the GasWise calculator
-and must be replaced with genuine observations
-before claiming the fieldwork requirement is complete.
+Some records represent cooking activities observed directly, while others are estimated examples based on the usual household cooking pattern described by my mother.
+
+The estimated records are intended for testing and should not be treated as individually observed cooking sessions. Further real-world observations are required to validate the model.

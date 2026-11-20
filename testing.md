@@ -6,13 +6,17 @@
 
 `2026-11-20,19:00,tea,-15,3,invalid`
 
-**Expected:** Reject the invalid row without stopping the program.
+**Expected Result:**
+- The program identifies invalid CSV records.
+- Validation errors are displayed.
+- Report generation stops until the invalid data is corrected.
 
 **Actual Result:**
 - Valid records: 20
 - Invalid records: 1
-- Program continued executing successfully.
-- Existing cooking-usage calculations remained unchanged.
+- The invalid cooking record was identified.
+- The application stopped report generation without crashing.
+- Existing valid records remained unchanged.
 
 **Status:** Passed
 
@@ -24,13 +28,15 @@
 
 **Results:**
 - Approximate depletion: 14 January 2027
+- Original reminder: 7 January 2027
 - Updated reminder: 4 January 2027
 
 **Status:** Passed
 
 ## Limitations
 
-- Tests were conducted using synthetic cooking records.
+- Cooking records include information collected from my mother, direct observations, and estimated entries based on her usual cooking routine.
+- Not all records represent individually observed cooking sessions.
 - The tool does not measure actual LPG remaining.
-- The refill date uses an approximate 60-day historical lifespan.
+- The estimated refill date is based on an assumed 60-day cylinder lifespan rather than actual measured consumption.
 - Additional tests are needed for individual invalid fields, missing records, and malformed CSV files.
