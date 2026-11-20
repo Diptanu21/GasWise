@@ -52,7 +52,7 @@ The application uses these values to calculate an approximate cooking-usage scor
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Diptanu21/GasWise.git
 cd GasWise
 ```
 
