@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const INSTALL_DATE = "2026-11-15";
 const EXPECTED_LIFESPAN = 60;
-const REMINDER_DAYS = 7;
+const REMINDER_DAYS = 10;
 
 const flameFactor = {
   low: 0.7,
